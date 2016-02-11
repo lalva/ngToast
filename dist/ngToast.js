@@ -1,7 +1,7 @@
 /*!
  * ngToast v1.5.6 (http://tameraydin.github.io/ngToast)
- * Copyright 2015 Tamer Aydin (http://tamerayd.in)
- * Licensed under MIT (http://tameraydin.mit-license.org/)
+ * Copyright 2016 Tamer Aydin (http://tamerayd.in)
+ * Licensed under  ()
  */
 (function(window, angular, undefined) {
   'use strict';
@@ -139,10 +139,10 @@
         $templateCache.put('ngToast/toast.html',
           '<div class="ng-toast ng-toast--{{hPos}} ng-toast--{{vPos}} {{animation ? \'ng-toast--animate-\' + animation : \'\'}}">' +
             '<ul class="ng-toast__list">' +
-              '<toast-message ng-repeat="message in messages" ' +
+              '<div toast-message ng-repeat="message in messages" ' +
                 'message="message" count="message.count">' +
                 '<span ng-bind-html="message.content"></span>' +
-              '</toast-message>' +
+              '</div>' +
             '</ul>' +
           '</div>');
         $templateCache.put('ngToast/toastMessage.html',
